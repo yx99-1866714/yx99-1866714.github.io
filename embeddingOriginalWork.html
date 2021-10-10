@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World, bye world</title>
+  </head>
+  <body>
+    <div>
+      <p>Audio</p>
+      <audio controls>
+        <source src="music/music.mp3" type="audio/mp3">
+      </audio>
+    </div>
+    <div>
+      <p>Video</p>
+      <video controls>
+        <source src="video/yep.mp4" type="video/mp4">
+      </video>
+      <p>Youtube Video1</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pua6UCU-WiA?start=180" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Youtube Video2</p>
+      <div id="ytplayer"></div>
+        <script>
+          // Load the IFrame Player API code asynchronously.
+          var tag = document.createElement('script');
+          tag.src = "https://www.youtube.com/player_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+          // Replace the 'ytplayer' element with an <iframe> and
+          // YouTube player after the API code downloads.
+          var player;
+          function onYouTubePlayerAPIReady() {
+            player = new YT.Player('ytplayer', {
+              height: '315',
+              width: '560',
+              videoId: 'QIjKijhv1OU'
+            });
+          }
+        </script>
+        <p>Object tag image</p>
+        <object data="picture/lord_and_savior.jpg" width="300" height="200"></object>
+    </div>
+    <div>
+      <a class="twitter-timeline" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </body>
+</html>
