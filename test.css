@@ -1,0 +1,83 @@
+body {
+  background-color: blanchedalmond    ;
+}
+p {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+li {
+  background: #cce5ff;
+  margin: 5px;
+}
+a:hover {
+  color: hotpink;
+}
+#Header {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border: solid 8px black;
+  text-align: center;
+  border-radius: 7px;
+}
+#Header:hover {
+  border-color:rgb(153, 203, 253);
+}
+#Header h1 {
+
+}
+#LeftNav {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border: solid 8px black;
+  float: left;
+  padding-bottom: 8px;
+  list-style-type: none;
+  border-radius: 7px;
+  background: #3399ff;
+}
+#LeftNav:hover {
+  border-color:rgb(153, 203, 253);
+}
+#LeftNav img{
+
+}
+#LeftNav ul{
+  padding-left: 0px;
+  list-style-type: none;
+}
+#LeftNav h3{
+
+}
+#Content {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border: solid 8px black;
+  text-align: center;
+  padding: 15px;
+  border-radius: 7px;
+}
+#Content:hover {
+  border-color:rgb(153, 203, 253);
+}
+#Footer {
+  list-style-type: none;
+  border: solid 8px black;
+  text-align: center;
+  border-radius: 7px;
+  background: #3399ff;
+}
+#Footer:hover {
+  border-color:rgb(153, 203, 253);
+}
+#Footer ul{
+  padding-left: 0px;
+  list-style-type: none;
+}
